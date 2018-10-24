@@ -5,7 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var mvc;
-(function (mvc_1) {
+(function (mvc) {
     var Hello = /** @class */ (function () {
         function Hello() {
         }
@@ -34,8 +34,8 @@ var mvc;
         ], HelloView1.prototype, "view2", void 0);
         return HelloView1;
     }());
-    var mvc;
-    (function (mvc) {
+    var mvcInner;
+    (function (mvcInner) {
         var Innter = /** @class */ (function () {
             function Innter() {
             }
@@ -44,9 +44,13 @@ var mvc;
             __decorate([
                 MVC
             ], Innter.prototype, "view", void 0);
+            __decorate([
+                MVC
+            ], Innter.prototype, "self", void 0);
             return Innter;
         }());
-    })(mvc || (mvc = {}));
+        mvcInner.Innter = Innter;
+    })(mvcInner || (mvcInner = {}));
 })(mvc || (mvc = {}));
 var World = /** @class */ (function () {
     function World() {

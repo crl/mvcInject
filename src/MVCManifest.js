@@ -120,7 +120,7 @@ var MVCManifest = /** @class */ (function () {
             var line = CodeUtil.getCurrentLine(text);
             var list = line.split(":");
             if (list.length > 1) {
-                result.push(ns.v + ":" + list[1].trim());
+                result.push(ns.v + ":" + CodeUtil.trimVariable(list[1]));
             }
         }
         return result;

@@ -11,13 +11,16 @@ module mvc {
         view: HelloView
         @MVC
         private view1: tt.KK;
-        @MVC private view2: HelloView
+        @MVC private view2: mvcInner.Innter
         constructor(){}
     }
-    module mvc {
-        class Innter{
+    module mvcInner {
+        export class Innter{
             @MVC
             view: HelloView1
+
+            @MVC
+            self:Innter;
             public aa() {
             }
         }

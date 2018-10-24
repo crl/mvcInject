@@ -126,7 +126,7 @@ export class MVCManifest {
             let line =CodeUtil.getCurrentLine(text);
             let list=line.split(":");
             if(list.length>1){
-                result.push(ns.v+":"+list[1].trim());
+                result.push(ns.v+":"+CodeUtil.trimVariable(list[1]));
             }
         }
         return result;
