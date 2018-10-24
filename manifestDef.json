@@ -1,0 +1,26 @@
+{
+    "mvc.Hello": [
+        "publica:aa.tK",
+        "privateb:HelloView;",
+        "protectedc:HelloView"
+    ],
+    "mvc.HelloView1": [
+        "view:HelloView",
+        "view1:tt.KK;",
+        "view2:HelloView"
+    ],
+    "mvc.mvc.Innter": [
+        "view:HelloView1"
+    ],
+    "World": [
+        "view:HelloView",
+        "view1:HelloView;",
+        "view2:HelloView"
+    ],
+    "tt.KK": [
+        "view:HelloView"
+    ],
+    "aa.tK": [
+        "view:HelloView"
+    ]
+}

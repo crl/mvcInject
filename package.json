@@ -1,0 +1,13 @@
+{
+  "name": "inject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Main.js",
+  "scripts": {
+    "pretest":"tsc",
+    "test": "node App.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

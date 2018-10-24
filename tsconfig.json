@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "lib": [
+      "es5",
+      "es2015"
+    ]
+  },
+  "exclude": [
+    "templates/**/*.ts",
+    "lib/typescript-plus/lib/*.d.ts"
+  ]
+}
