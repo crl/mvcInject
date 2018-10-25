@@ -39,10 +39,15 @@ var MVCManifest = /** @class */ (function () {
     };
     MVCManifest.prototype.analyzeModule = function (text, ns) {
         if (ns === void 0) { ns = ""; }
-        var keyword = "module";
+        var keyword = "";
         var block = "";
         while (text.length > 0) {
+            keyword = "module";
             var index = CodeUtil.getFirstVariableIndex(keyword, text);
+            if (index == -1) {
+                keyword = "namespace";
+                index = CodeUtil.getFirstVariableIndex(keyword, text);
+            }
             if (index == -1) {
                 this.moduleDefineAdd(ns, this.getDefine(text, "class"));
             }
